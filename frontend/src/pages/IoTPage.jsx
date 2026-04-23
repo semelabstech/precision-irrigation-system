@@ -9,7 +9,7 @@ export default function IoTPage({ selectedRegion, appMode, userLocation }) {
     if (appMode === 'farmer' && userLocation) {
         queryParams = `region=custom&lat=${userLocation.lat}&lon=${userLocation.lon}`
     }
-    fetch(`http://127.0.0.1:8000/api/iot?${queryParams}`)
+    fetch(`/api/iot?${queryParams}`)
       .then(res => res.json())
       .then(data => {
         setSensors(data.sensors || [])

@@ -1,0 +1,722 @@
+[
+  {
+    "id": "wheat_winter", "name_en": "Winter Wheat", "name_fr": "Ble d'hiver", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 0.25,
+    "stage_days": {"initial": 30, "development": 50, "mid": 60, "late": 40},
+    "total_growing_days": 180, "root_depth_m": 1.5, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.0, "optimal_temp_range": [5, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 450
+  },
+  {
+    "id": "wheat_spring", "name_en": "Spring Wheat", "name_fr": "Ble de printemps", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.35, "kc_mid": 1.15, "kc_end": 0.3,
+    "stage_days": {"initial": 25, "development": 35, "mid": 65, "late": 30},
+    "total_growing_days": 155, "root_depth_m": 1.2, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.15, "optimal_temp_range": [10, 28], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "rice_paddy", "name_en": "Rice (Paddy)", "name_fr": "Riz (paddy)", "category": "Cereals", "icon": "🍚",
+    "kc_ini": 1.05, "kc_mid": 1.2, "kc_end": 0.9,
+    "stage_days": {"initial": 30, "development": 30, "mid": 60, "late": 30},
+    "total_growing_days": 150, "root_depth_m": 0.6, "depletion_fraction": 0.2,
+    "yield_response_ky": 1.09, "optimal_temp_range": [20, 35], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 900
+  },
+  {
+    "id": "maize_grain", "name_en": "Maize (Grain)", "name_fr": "Mais (grain)", "category": "Cereals", "icon": "🌽",
+    "kc_ini": 0.3, "kc_mid": 1.2, "kc_end": 0.35,
+    "stage_days": {"initial": 25, "development": 40, "mid": 45, "late": 30},
+    "total_growing_days": 140, "root_depth_m": 1.5, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.25, "optimal_temp_range": [18, 33], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 500
+  },
+  {
+    "id": "maize_sweet", "name_en": "Sweet Corn", "name_fr": "Mais doux", "category": "Cereals", "icon": "🌽",
+    "kc_ini": 0.3, "kc_mid": 1.15, "kc_end": 1.05,
+    "stage_days": {"initial": 20, "development": 30, "mid": 30, "late": 10},
+    "total_growing_days": 90, "root_depth_m": 0.8, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.25, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 400
+  },
+  {
+    "id": "barley", "name_en": "Barley", "name_fr": "Orge", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.3, "kc_mid": 1.15, "kc_end": 0.25,
+    "stage_days": {"initial": 20, "development": 30, "mid": 60, "late": 30},
+    "total_growing_days": 140, "root_depth_m": 1.2, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.0, "optimal_temp_range": [5, 25], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 350
+  },
+  {
+    "id": "oats", "name_en": "Oats", "name_fr": "Avoine", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.3, "kc_mid": 1.15, "kc_end": 0.25,
+    "stage_days": {"initial": 20, "development": 30, "mid": 60, "late": 30},
+    "total_growing_days": 140, "root_depth_m": 1.0, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.0, "optimal_temp_range": [5, 22], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 350
+  },
+  {
+    "id": "sorghum_grain", "name_en": "Sorghum (Grain)", "name_fr": "Sorgho (grain)", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.3, "kc_mid": 1.1, "kc_end": 0.55,
+    "stage_days": {"initial": 20, "development": 35, "mid": 45, "late": 30},
+    "total_growing_days": 130, "root_depth_m": 1.5, "depletion_fraction": 0.55,
+    "yield_response_ky": 0.9, "optimal_temp_range": [20, 35], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 450
+  },
+  {
+    "id": "millet", "name_en": "Millet", "name_fr": "Mil", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.3, "kc_mid": 1.0, "kc_end": 0.3,
+    "stage_days": {"initial": 15, "development": 25, "mid": 40, "late": 25},
+    "total_growing_days": 105, "root_depth_m": 1.5, "depletion_fraction": 0.55,
+    "yield_response_ky": 0.9, "optimal_temp_range": [25, 38], "frost_tolerance": false,
+    "drought_tolerance": "very_high", "water_total_mm": 350
+  },
+  {
+    "id": "rye", "name_en": "Rye", "name_fr": "Seigle", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.35, "kc_mid": 1.15, "kc_end": 0.3,
+    "stage_days": {"initial": 25, "development": 35, "mid": 60, "late": 35},
+    "total_growing_days": 155, "root_depth_m": 1.3, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.0, "optimal_temp_range": [3, 22], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 380
+  },
+  {
+    "id": "quinoa", "name_en": "Quinoa", "name_fr": "Quinoa", "category": "Cereals", "icon": "🌾",
+    "kc_ini": 0.3, "kc_mid": 1.0, "kc_end": 0.4,
+    "stage_days": {"initial": 25, "development": 40, "mid": 50, "late": 30},
+    "total_growing_days": 145, "root_depth_m": 0.8, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.85, "optimal_temp_range": [8, 25], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 300
+  },
+  {
+    "id": "tomato", "name_en": "Tomato", "name_fr": "Tomate", "category": "Vegetables", "icon": "🍅",
+    "kc_ini": 0.6, "kc_mid": 1.15, "kc_end": 0.8,
+    "stage_days": {"initial": 30, "development": 40, "mid": 40, "late": 25},
+    "total_growing_days": 135, "root_depth_m": 1.0, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.05, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 600
+  },
+  {
+    "id": "potato", "name_en": "Potato", "name_fr": "Pomme de terre", "category": "Vegetables", "icon": "🥔",
+    "kc_ini": 0.5, "kc_mid": 1.15, "kc_end": 0.75,
+    "stage_days": {"initial": 25, "development": 30, "mid": 45, "late": 30},
+    "total_growing_days": 130, "root_depth_m": 0.6, "depletion_fraction": 0.35,
+    "yield_response_ky": 1.1, "optimal_temp_range": [12, 22], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 500
+  },
+  {
+    "id": "onion_dry", "name_en": "Onion (dry)", "name_fr": "Oignon (sec)", "category": "Vegetables", "icon": "🧅",
+    "kc_ini": 0.7, "kc_mid": 1.05, "kc_end": 0.75,
+    "stage_days": {"initial": 15, "development": 25, "mid": 70, "late": 40},
+    "total_growing_days": 150, "root_depth_m": 0.4, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.1, "optimal_temp_range": [12, 25], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 450
+  },
+  {
+    "id": "pepper_bell", "name_en": "Bell Pepper", "name_fr": "Poivron", "category": "Vegetables", "icon": "🫑",
+    "kc_ini": 0.6, "kc_mid": 1.05, "kc_end": 0.9,
+    "stage_days": {"initial": 25, "development": 35, "mid": 40, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.7, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.1, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 550
+  },
+  {
+    "id": "lettuce", "name_en": "Lettuce", "name_fr": "Laitue", "category": "Vegetables", "icon": "🥬",
+    "kc_ini": 0.7, "kc_mid": 1.0, "kc_end": 0.95,
+    "stage_days": {"initial": 20, "development": 30, "mid": 15, "late": 10},
+    "total_growing_days": 75, "root_depth_m": 0.3, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.05, "optimal_temp_range": [10, 22], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 250
+  },
+  {
+    "id": "carrot", "name_en": "Carrot", "name_fr": "Carotte", "category": "Vegetables", "icon": "🥕",
+    "kc_ini": 0.7, "kc_mid": 1.05, "kc_end": 0.95,
+    "stage_days": {"initial": 20, "development": 30, "mid": 50, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.5, "depletion_fraction": 0.35,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 24], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 400
+  },
+  {
+    "id": "eggplant", "name_en": "Eggplant", "name_fr": "Aubergine", "category": "Vegetables", "icon": "🍆",
+    "kc_ini": 0.6, "kc_mid": 1.05, "kc_end": 0.9,
+    "stage_days": {"initial": 30, "development": 40, "mid": 40, "late": 20},
+    "total_growing_days": 130, "root_depth_m": 0.8, "depletion_fraction": 0.45,
+    "yield_response_ky": 1.1, "optimal_temp_range": [20, 32], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 550
+  },
+  {
+    "id": "cabbage", "name_en": "Cabbage", "name_fr": "Chou", "category": "Vegetables", "icon": "🥬",
+    "kc_ini": 0.7, "kc_mid": 1.05, "kc_end": 0.95,
+    "stage_days": {"initial": 25, "development": 35, "mid": 30, "late": 10},
+    "total_growing_days": 100, "root_depth_m": 0.5, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.95, "optimal_temp_range": [12, 22], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 380
+  },
+  {
+    "id": "cucumber", "name_en": "Cucumber", "name_fr": "Concombre", "category": "Vegetables", "icon": "🥒",
+    "kc_ini": 0.6, "kc_mid": 1.0, "kc_end": 0.75,
+    "stage_days": {"initial": 20, "development": 30, "mid": 30, "late": 10},
+    "total_growing_days": 90, "root_depth_m": 0.7, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.9, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 350
+  },
+  {
+    "id": "spinach", "name_en": "Spinach", "name_fr": "Epinard", "category": "Vegetables", "icon": "🥬",
+    "kc_ini": 0.7, "kc_mid": 1.0, "kc_end": 0.95,
+    "stage_days": {"initial": 15, "development": 20, "mid": 15, "late": 5},
+    "total_growing_days": 55, "root_depth_m": 0.3, "depletion_fraction": 0.2,
+    "yield_response_ky": 1.0, "optimal_temp_range": [8, 22], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 200
+  },
+  {
+    "id": "melon", "name_en": "Melon", "name_fr": "Melon", "category": "Vegetables", "icon": "🍈",
+    "kc_ini": 0.5, "kc_mid": 1.05, "kc_end": 0.75,
+    "stage_days": {"initial": 25, "development": 35, "mid": 40, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 1.0, "depletion_fraction": 0.45,
+    "yield_response_ky": 1.1, "optimal_temp_range": [22, 35], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 450
+  },
+  {
+    "id": "watermelon", "name_en": "Watermelon", "name_fr": "Pasteque", "category": "Vegetables", "icon": "🍉",
+    "kc_ini": 0.4, "kc_mid": 1.0, "kc_end": 0.75,
+    "stage_days": {"initial": 20, "development": 30, "mid": 30, "late": 15},
+    "total_growing_days": 95, "root_depth_m": 1.0, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.1, "optimal_temp_range": [22, 35], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "pumpkin", "name_en": "Pumpkin / Squash", "name_fr": "Courge / Citrouille", "category": "Vegetables", "icon": "🎃",
+    "kc_ini": 0.5, "kc_mid": 1.0, "kc_end": 0.8,
+    "stage_days": {"initial": 20, "development": 30, "mid": 30, "late": 20},
+    "total_growing_days": 100, "root_depth_m": 1.0, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.9, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "garlic", "name_en": "Garlic", "name_fr": "Ail", "category": "Vegetables", "icon": "🧄",
+    "kc_ini": 0.7, "kc_mid": 1.0, "kc_end": 0.7,
+    "stage_days": {"initial": 30, "development": 40, "mid": 70, "late": 30},
+    "total_growing_days": 170, "root_depth_m": 0.4, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 25], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 400
+  },
+  {
+    "id": "green_bean", "name_en": "Green Bean", "name_fr": "Haricot vert", "category": "Legumes", "icon": "🫘",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 0.35,
+    "stage_days": {"initial": 15, "development": 25, "mid": 25, "late": 10},
+    "total_growing_days": 75, "root_depth_m": 0.6, "depletion_fraction": 0.45,
+    "yield_response_ky": 1.15, "optimal_temp_range": [15, 28], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 300
+  },
+  {
+    "id": "soybean", "name_en": "Soybean", "name_fr": "Soja", "category": "Legumes", "icon": "🫘",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 0.5,
+    "stage_days": {"initial": 20, "development": 30, "mid": 60, "late": 25},
+    "total_growing_days": 135, "root_depth_m": 0.9, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.85, "optimal_temp_range": [20, 30], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 450
+  },
+  {
+    "id": "chickpea", "name_en": "Chickpea", "name_fr": "Pois chiche", "category": "Legumes", "icon": "🫘",
+    "kc_ini": 0.4, "kc_mid": 1.0, "kc_end": 0.35,
+    "stage_days": {"initial": 25, "development": 35, "mid": 40, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.8, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [15, 28], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 300
+  },
+  {
+    "id": "lentil", "name_en": "Lentil", "name_fr": "Lentille", "category": "Legumes", "icon": "🫘",
+    "kc_ini": 0.4, "kc_mid": 1.1, "kc_end": 0.3,
+    "stage_days": {"initial": 20, "development": 30, "mid": 60, "late": 25},
+    "total_growing_days": 135, "root_depth_m": 0.6, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.85, "optimal_temp_range": [12, 25], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 280
+  },
+  {
+    "id": "peanut", "name_en": "Peanut / Groundnut", "name_fr": "Arachide", "category": "Legumes", "icon": "🥜",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 0.6,
+    "stage_days": {"initial": 25, "development": 35, "mid": 45, "late": 25},
+    "total_growing_days": 130, "root_depth_m": 0.7, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.7, "optimal_temp_range": [22, 33], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 500
+  },
+  {
+    "id": "pea", "name_en": "Pea", "name_fr": "Petit pois", "category": "Legumes", "icon": "🫛",
+    "kc_ini": 0.5, "kc_mid": 1.15, "kc_end": 1.1,
+    "stage_days": {"initial": 15, "development": 25, "mid": 35, "late": 15},
+    "total_growing_days": 90, "root_depth_m": 0.6, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.15, "optimal_temp_range": [10, 22], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 350
+  },
+  {
+    "id": "fava_bean", "name_en": "Fava Bean", "name_fr": "Feve", "category": "Legumes", "icon": "🫘",
+    "kc_ini": 0.5, "kc_mid": 1.15, "kc_end": 1.1,
+    "stage_days": {"initial": 20, "development": 30, "mid": 50, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.7, "depletion_fraction": 0.45,
+    "yield_response_ky": 1.1, "optimal_temp_range": [10, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 350
+  },
+  {
+    "id": "cotton", "name_en": "Cotton", "name_fr": "Coton", "category": "Industrial", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.2, "kc_end": 0.6,
+    "stage_days": {"initial": 30, "development": 50, "mid": 55, "late": 45},
+    "total_growing_days": 180, "root_depth_m": 1.3, "depletion_fraction": 0.65,
+    "yield_response_ky": 0.85, "optimal_temp_range": [20, 35], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 700
+  },
+  {
+    "id": "sugarcane", "name_en": "Sugarcane", "name_fr": "Canne a sucre", "category": "Sugar", "icon": "🌿",
+    "kc_ini": 0.4, "kc_mid": 1.25, "kc_end": 0.75,
+    "stage_days": {"initial": 35, "development": 60, "mid": 190, "late": 80},
+    "total_growing_days": 365, "root_depth_m": 1.5, "depletion_fraction": 0.65,
+    "yield_response_ky": 1.2, "optimal_temp_range": [20, 38], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 1500
+  },
+  {
+    "id": "sugar_beet", "name_en": "Sugar Beet", "name_fr": "Betterave sucriere", "category": "Sugar", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.2, "kc_end": 0.7,
+    "stage_days": {"initial": 30, "development": 45, "mid": 90, "late": 35},
+    "total_growing_days": 200, "root_depth_m": 1.0, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.0, "optimal_temp_range": [12, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 550
+  },
+  {
+    "id": "sunflower", "name_en": "Sunflower", "name_fr": "Tournesol", "category": "Oil Crops", "icon": "🌻",
+    "kc_ini": 0.35, "kc_mid": 1.1, "kc_end": 0.35,
+    "stage_days": {"initial": 25, "development": 35, "mid": 45, "late": 25},
+    "total_growing_days": 130, "root_depth_m": 1.5, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.95, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 400
+  },
+  {
+    "id": "rapeseed", "name_en": "Rapeseed / Canola", "name_fr": "Colza", "category": "Oil Crops", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.15, "kc_end": 0.35,
+    "stage_days": {"initial": 25, "development": 35, "mid": 65, "late": 30},
+    "total_growing_days": 155, "root_depth_m": 1.2, "depletion_fraction": 0.6,
+    "yield_response_ky": 1.0, "optimal_temp_range": [8, 22], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "olive", "name_en": "Olive", "name_fr": "Olivier", "category": "Fruits", "icon": "🫒",
+    "kc_ini": 0.65, "kc_mid": 0.7, "kc_end": 0.65,
+    "stage_days": {"initial": 30, "development": 60, "mid": 120, "late": 60},
+    "total_growing_days": 270, "root_depth_m": 1.7, "depletion_fraction": 0.65,
+    "yield_response_ky": 0.8, "optimal_temp_range": [12, 30], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 700
+  },
+  {
+    "id": "citrus_orange", "name_en": "Orange (Citrus)", "name_fr": "Orange (agrume)", "category": "Fruits", "icon": "🍊",
+    "kc_ini": 0.7, "kc_mid": 0.65, "kc_end": 0.7,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.2, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [15, 32], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 900
+  },
+  {
+    "id": "grape_table", "name_en": "Grape (Table)", "name_fr": "Raisin de table", "category": "Fruits", "icon": "🍇",
+    "kc_ini": 0.3, "kc_mid": 0.85, "kc_end": 0.45,
+    "stage_days": {"initial": 20, "development": 50, "mid": 75, "late": 60},
+    "total_growing_days": 205, "root_depth_m": 1.5, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.85, "optimal_temp_range": [15, 30], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 550
+  },
+  {
+    "id": "grape_wine", "name_en": "Grape (Wine)", "name_fr": "Vigne (vin)", "category": "Fruits", "icon": "🍇",
+    "kc_ini": 0.3, "kc_mid": 0.7, "kc_end": 0.45,
+    "stage_days": {"initial": 20, "development": 50, "mid": 75, "late": 60},
+    "total_growing_days": 205, "root_depth_m": 1.5, "depletion_fraction": 0.55,
+    "yield_response_ky": 0.85, "optimal_temp_range": [12, 28], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 450
+  },
+  {
+    "id": "apple", "name_en": "Apple", "name_fr": "Pommier", "category": "Fruits", "icon": "🍎",
+    "kc_ini": 0.6, "kc_mid": 0.95, "kc_end": 0.75,
+    "stage_days": {"initial": 20, "development": 70, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [8, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 700
+  },
+  {
+    "id": "peach", "name_en": "Peach / Nectarine", "name_fr": "Pecher / Nectarine", "category": "Fruits", "icon": "🍑",
+    "kc_ini": 0.55, "kc_mid": 0.9, "kc_end": 0.65,
+    "stage_days": {"initial": 20, "development": 70, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.3, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 28], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 650
+  },
+  {
+    "id": "banana", "name_en": "Banana", "name_fr": "Bananier", "category": "Tropical", "icon": "🍌",
+    "kc_ini": 0.5, "kc_mid": 1.1, "kc_end": 1.0,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 60},
+    "total_growing_days": 330, "root_depth_m": 0.5, "depletion_fraction": 0.35,
+    "yield_response_ky": 1.2, "optimal_temp_range": [22, 35], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1200
+  },
+  {
+    "id": "mango", "name_en": "Mango", "name_fr": "Manguier", "category": "Tropical", "icon": "🥭",
+    "kc_ini": 0.55, "kc_mid": 0.85, "kc_end": 0.6,
+    "stage_days": {"initial": 30, "development": 60, "mid": 120, "late": 90},
+    "total_growing_days": 300, "root_depth_m": 2.0, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.75, "optimal_temp_range": [24, 36], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 800
+  },
+  {
+    "id": "pineapple", "name_en": "Pineapple", "name_fr": "Ananas", "category": "Tropical", "icon": "🍍",
+    "kc_ini": 0.5, "kc_mid": 0.3, "kc_end": 0.3,
+    "stage_days": {"initial": 60, "development": 120, "mid": 240, "late": 120},
+    "total_growing_days": 540, "root_depth_m": 0.3, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.6, "optimal_temp_range": [22, 32], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 700
+  },
+  {
+    "id": "coconut", "name_en": "Coconut Palm", "name_fr": "Cocotier", "category": "Tropical", "icon": "🥥",
+    "kc_ini": 0.9, "kc_mid": 1.0, "kc_end": 0.95,
+    "stage_days": {"initial": 90, "development": 180, "mid": 365, "late": 180},
+    "total_growing_days": 365, "root_depth_m": 1.0, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.8, "optimal_temp_range": [24, 34], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 1300
+  },
+  {
+    "id": "coffee_arabica", "name_en": "Coffee (Arabica)", "name_fr": "Cafe (Arabica)", "category": "Tropical", "icon": "☕",
+    "kc_ini": 0.9, "kc_mid": 0.95, "kc_end": 0.95,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.5, "depletion_fraction": 0.4,
+    "yield_response_ky": 0.75, "optimal_temp_range": [15, 25], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1100
+  },
+  {
+    "id": "cocoa", "name_en": "Cocoa", "name_fr": "Cacaoyer", "category": "Tropical", "icon": "🍫",
+    "kc_ini": 1.0, "kc_mid": 1.05, "kc_end": 1.0,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.2, "depletion_fraction": 0.3,
+    "yield_response_ky": 0.85, "optimal_temp_range": [20, 32], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1500
+  },
+  {
+    "id": "tea", "name_en": "Tea", "name_fr": "The", "category": "Tropical", "icon": "🍵",
+    "kc_ini": 0.95, "kc_mid": 1.0, "kc_end": 1.0,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.2, "depletion_fraction": 0.4,
+    "yield_response_ky": 0.8, "optimal_temp_range": [15, 28], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1200
+  },
+  {
+    "id": "cassava", "name_en": "Cassava", "name_fr": "Manioc", "category": "Roots", "icon": "🌿",
+    "kc_ini": 0.3, "kc_mid": 1.1, "kc_end": 0.5,
+    "stage_days": {"initial": 20, "development": 40, "mid": 90, "late": 60},
+    "total_growing_days": 210, "root_depth_m": 0.7, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.45, "optimal_temp_range": [22, 32], "frost_tolerance": false,
+    "drought_tolerance": "very_high", "water_total_mm": 500
+  },
+  {
+    "id": "sweet_potato", "name_en": "Sweet Potato", "name_fr": "Patate douce", "category": "Roots", "icon": "🍠",
+    "kc_ini": 0.5, "kc_mid": 1.15, "kc_end": 0.65,
+    "stage_days": {"initial": 20, "development": 30, "mid": 60, "late": 30},
+    "total_growing_days": 140, "root_depth_m": 0.6, "depletion_fraction": 0.65,
+    "yield_response_ky": 1.0, "optimal_temp_range": [22, 30], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 450
+  },
+  {
+    "id": "alfalfa", "name_en": "Alfalfa", "name_fr": "Luzerne", "category": "Forage", "icon": "🌿",
+    "kc_ini": 0.4, "kc_mid": 1.2, "kc_end": 1.15,
+    "stage_days": {"initial": 10, "development": 20, "mid": 90, "late": 10},
+    "total_growing_days": 130, "root_depth_m": 2.0, "depletion_fraction": 0.55,
+    "yield_response_ky": 1.05, "optimal_temp_range": [10, 30], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 800
+  },
+  {
+    "id": "bermuda_grass", "name_en": "Bermuda Grass", "name_fr": "Chiendent / Bermuda", "category": "Forage", "icon": "🌿",
+    "kc_ini": 0.55, "kc_mid": 1.0, "kc_end": 0.85,
+    "stage_days": {"initial": 15, "development": 25, "mid": 70, "late": 20},
+    "total_growing_days": 130, "root_depth_m": 1.5, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.85, "optimal_temp_range": [20, 35], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 450
+  },
+  {
+    "id": "almond", "name_en": "Almond", "name_fr": "Amandier", "category": "Nuts", "icon": "🌰",
+    "kc_ini": 0.4, "kc_mid": 0.9, "kc_end": 0.65,
+    "stage_days": {"initial": 30, "development": 60, "mid": 100, "late": 40},
+    "total_growing_days": 230, "root_depth_m": 1.5, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.8, "optimal_temp_range": [15, 30], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 800
+  },
+  {
+    "id": "walnut", "name_en": "Walnut", "name_fr": "Noyer", "category": "Nuts", "icon": "🌰",
+    "kc_ini": 0.5, "kc_mid": 1.1, "kc_end": 0.65,
+    "stage_days": {"initial": 20, "development": 60, "mid": 100, "late": 40},
+    "total_growing_days": 220, "root_depth_m": 1.7, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [10, 28], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 900
+  },
+  {
+    "id": "pistachio", "name_en": "Pistachio", "name_fr": "Pistachier", "category": "Nuts", "icon": "🌰",
+    "kc_ini": 0.4, "kc_mid": 1.1, "kc_end": 0.45,
+    "stage_days": {"initial": 20, "development": 60, "mid": 100, "late": 40},
+    "total_growing_days": 220, "root_depth_m": 1.5, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.8, "optimal_temp_range": [18, 35], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 650
+  },
+  {
+    "id": "date_palm", "name_en": "Date Palm", "name_fr": "Palmier dattier", "category": "Fruits", "icon": "🌴",
+    "kc_ini": 0.9, "kc_mid": 0.95, "kc_end": 0.95,
+    "stage_days": {"initial": 90, "development": 90, "mid": 120, "late": 65},
+    "total_growing_days": 365, "root_depth_m": 2.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.5, "optimal_temp_range": [25, 42], "frost_tolerance": false,
+    "drought_tolerance": "very_high", "water_total_mm": 1000
+  },
+  {
+    "id": "avocado", "name_en": "Avocado", "name_fr": "Avocatier", "category": "Fruits", "icon": "🥑",
+    "kc_ini": 0.6, "kc_mid": 0.85, "kc_end": 0.75,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.0, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.9, "optimal_temp_range": [18, 28], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1000
+  },
+  {
+    "id": "strawberry", "name_en": "Strawberry", "name_fr": "Fraisier", "category": "Fruits", "icon": "🍓",
+    "kc_ini": 0.4, "kc_mid": 0.85, "kc_end": 0.75,
+    "stage_days": {"initial": 10, "development": 20, "mid": 30, "late": 10},
+    "total_growing_days": 70, "root_depth_m": 0.3, "depletion_fraction": 0.2,
+    "yield_response_ky": 1.2, "optimal_temp_range": [12, 25], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 350
+  },
+  {
+    "id": "fig", "name_en": "Fig", "name_fr": "Figuier", "category": "Fruits", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 0.85, "kc_end": 0.55,
+    "stage_days": {"initial": 30, "development": 60, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [18, 32], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 500
+  },
+  {
+    "id": "pomegranate", "name_en": "Pomegranate", "name_fr": "Grenadier", "category": "Fruits", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 0.8, "kc_end": 0.6,
+    "stage_days": {"initial": 30, "development": 60, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.2, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [18, 35], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 500
+  },
+  {
+    "id": "saffron", "name_en": "Saffron", "name_fr": "Safran", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 0.2,
+    "stage_days": {"initial": 15, "development": 25, "mid": 60, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.3, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 25], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 250
+  },
+  {
+    "id": "mint", "name_en": "Mint", "name_fr": "Menthe", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.6, "kc_mid": 1.15, "kc_end": 1.1,
+    "stage_days": {"initial": 10, "development": 20, "mid": 50, "late": 10},
+    "total_growing_days": 90, "root_depth_m": 0.4, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.0, "optimal_temp_range": [15, 28], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 350
+  },
+  {
+    "id": "tobacco", "name_en": "Tobacco", "name_fr": "Tabac", "category": "Industrial", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.15, "kc_end": 0.8,
+    "stage_days": {"initial": 10, "development": 30, "mid": 40, "late": 25},
+    "total_growing_days": 105, "root_depth_m": 1.0, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.9, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "flax", "name_en": "Flax / Linseed", "name_fr": "Lin", "category": "Industrial", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.1, "kc_end": 0.25,
+    "stage_days": {"initial": 25, "development": 35, "mid": 50, "late": 30},
+    "total_growing_days": 140, "root_depth_m": 1.0, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [10, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 350
+  },
+  {
+    "id": "sesame", "name_en": "Sesame", "name_fr": "Sesame", "category": "Oil Crops", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.1, "kc_end": 0.25,
+    "stage_days": {"initial": 20, "development": 30, "mid": 35, "late": 20},
+    "total_growing_days": 105, "root_depth_m": 1.0, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.75, "optimal_temp_range": [25, 35], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 350
+  },
+  {
+    "id": "palm_oil", "name_en": "Oil Palm", "name_fr": "Palmier a huile", "category": "Oil Crops", "icon": "🌴",
+    "kc_ini": 0.9, "kc_mid": 1.0, "kc_end": 1.0,
+    "stage_days": {"initial": 90, "development": 180, "mid": 365, "late": 180},
+    "total_growing_days": 365, "root_depth_m": 1.0, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [24, 34], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1800
+  },
+  {
+    "id": "cherry", "name_en": "Cherry", "name_fr": "Cerisier", "category": "Fruits", "icon": "🍒",
+    "kc_ini": 0.5, "kc_mid": 0.9, "kc_end": 0.65,
+    "stage_days": {"initial": 20, "development": 70, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [8, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 650
+  },
+  {
+    "id": "lemon", "name_en": "Lemon", "name_fr": "Citronnier", "category": "Fruits", "icon": "🍋",
+    "kc_ini": 0.7, "kc_mid": 0.65, "kc_end": 0.7,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 1.2, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [15, 32], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 900
+  },
+  {
+    "id": "clover", "name_en": "Clover", "name_fr": "Trefle", "category": "Forage", "icon": "🍀",
+    "kc_ini": 0.4, "kc_mid": 1.15, "kc_end": 1.1,
+    "stage_days": {"initial": 10, "development": 20, "mid": 90, "late": 10},
+    "total_growing_days": 130, "root_depth_m": 0.6, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 25], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 600
+  },
+  {
+    "id": "argan", "name_en": "Argan", "name_fr": "Arganier", "category": "Nuts", "icon": "🌳",
+    "kc_ini": 0.45, "kc_mid": 0.65, "kc_end": 0.55,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 3.0, "depletion_fraction": 0.7,
+    "yield_response_ky": 0.5, "optimal_temp_range": [15, 40], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 250
+  },
+  {
+    "id": "cactus", "name_en": "Prickly Pear Cactus", "name_fr": "Figuier de barbarie", "category": "Fruits", "icon": "🌵",
+    "kc_ini": 0.2, "kc_mid": 0.35, "kc_end": 0.3,
+    "stage_days": {"initial": 30, "development": 60, "mid": 180, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 0.5, "depletion_fraction": 0.7,
+    "yield_response_ky": 0.3, "optimal_temp_range": [15, 42], "frost_tolerance": false,
+    "drought_tolerance": "very_high", "water_total_mm": 150
+  },
+  {
+    "id": "henna", "name_en": "Henna", "name_fr": "Henne", "category": "Industrial", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 0.85, "kc_end": 0.65,
+    "stage_days": {"initial": 30, "development": 60, "mid": 90, "late": 30},
+    "total_growing_days": 210, "root_depth_m": 1.0, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.7, "optimal_temp_range": [25, 42], "frost_tolerance": false,
+    "drought_tolerance": "very_high", "water_total_mm": 300
+  },
+  {
+    "id": "pepper_hot", "name_en": "Hot Pepper / Chili", "name_fr": "Piment", "category": "Vegetables", "icon": "🌶️",
+    "kc_ini": 0.6, "kc_mid": 1.05, "kc_end": 0.9,
+    "stage_days": {"initial": 25, "development": 35, "mid": 40, "late": 20},
+    "total_growing_days": 120, "root_depth_m": 0.7, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.1, "optimal_temp_range": [20, 35], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 500
+  },
+  {
+    "id": "zucchini", "name_en": "Zucchini / Courgette", "name_fr": "Courgette", "category": "Vegetables", "icon": "🥒",
+    "kc_ini": 0.5, "kc_mid": 0.95, "kc_end": 0.7,
+    "stage_days": {"initial": 20, "development": 30, "mid": 25, "late": 10},
+    "total_growing_days": 85, "root_depth_m": 0.6, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.95, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 350
+  },
+  {
+    "id": "artichoke", "name_en": "Artichoke", "name_fr": "Artichaut", "category": "Vegetables", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 1.0, "kc_end": 0.95,
+    "stage_days": {"initial": 20, "development": 25, "mid": 90, "late": 30},
+    "total_growing_days": 165, "root_depth_m": 0.7, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.9, "optimal_temp_range": [12, 22], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 500
+  },
+  {
+    "id": "celery", "name_en": "Celery", "name_fr": "Celeri", "category": "Vegetables", "icon": "🌿",
+    "kc_ini": 0.7, "kc_mid": 1.05, "kc_end": 1.0,
+    "stage_days": {"initial": 25, "development": 40, "mid": 45, "late": 15},
+    "total_growing_days": 125, "root_depth_m": 0.3, "depletion_fraction": 0.2,
+    "yield_response_ky": 1.15, "optimal_temp_range": [12, 22], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 500
+  },
+  {
+    "id": "asparagus", "name_en": "Asparagus", "name_fr": "Asperge", "category": "Vegetables", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 0.95, "kc_end": 0.3,
+    "stage_days": {"initial": 50, "development": 30, "mid": 100, "late": 50},
+    "total_growing_days": 230, "root_depth_m": 1.2, "depletion_fraction": 0.45,
+    "yield_response_ky": 0.85, "optimal_temp_range": [15, 28], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 550
+  },
+  {
+    "id": "turnip", "name_en": "Turnip", "name_fr": "Navet", "category": "Roots", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 1.1, "kc_end": 0.95,
+    "stage_days": {"initial": 15, "development": 25, "mid": 25, "late": 10},
+    "total_growing_days": 75, "root_depth_m": 0.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 22], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 300
+  },
+  {
+    "id": "radish", "name_en": "Radish", "name_fr": "Radis", "category": "Roots", "icon": "🌿",
+    "kc_ini": 0.7, "kc_mid": 0.9, "kc_end": 0.85,
+    "stage_days": {"initial": 5, "development": 10, "mid": 10, "late": 5},
+    "total_growing_days": 30, "root_depth_m": 0.3, "depletion_fraction": 0.3,
+    "yield_response_ky": 1.0, "optimal_temp_range": [10, 22], "frost_tolerance": true,
+    "drought_tolerance": "low", "water_total_mm": 100
+  },
+  {
+    "id": "cashew", "name_en": "Cashew", "name_fr": "Anacardier", "category": "Nuts", "icon": "🌰",
+    "kc_ini": 0.5, "kc_mid": 0.85, "kc_end": 0.6,
+    "stage_days": {"initial": 30, "development": 60, "mid": 120, "late": 60},
+    "total_growing_days": 270, "root_depth_m": 1.5, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.7, "optimal_temp_range": [22, 35], "frost_tolerance": false,
+    "drought_tolerance": "high", "water_total_mm": 600
+  },
+  {
+    "id": "hazelnut", "name_en": "Hazelnut", "name_fr": "Noisetier", "category": "Nuts", "icon": "🌰",
+    "kc_ini": 0.5, "kc_mid": 1.0, "kc_end": 0.65,
+    "stage_days": {"initial": 25, "development": 60, "mid": 90, "late": 30},
+    "total_growing_days": 205, "root_depth_m": 1.2, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [8, 25], "frost_tolerance": true,
+    "drought_tolerance": "medium", "water_total_mm": 600
+  },
+  {
+    "id": "vanilla", "name_en": "Vanilla", "name_fr": "Vanille", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.9, "kc_mid": 1.0, "kc_end": 0.95,
+    "stage_days": {"initial": 60, "development": 90, "mid": 120, "late": 95},
+    "total_growing_days": 365, "root_depth_m": 0.3, "depletion_fraction": 0.3,
+    "yield_response_ky": 0.9, "optimal_temp_range": [22, 32], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 1500
+  },
+  {
+    "id": "ginger", "name_en": "Ginger", "name_fr": "Gingembre", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 1.0, "kc_end": 0.7,
+    "stage_days": {"initial": 30, "development": 60, "mid": 90, "late": 60},
+    "total_growing_days": 240, "root_depth_m": 0.3, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.0, "optimal_temp_range": [22, 32], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 800
+  },
+  {
+    "id": "turmeric", "name_en": "Turmeric", "name_fr": "Curcuma", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.5, "kc_mid": 1.05, "kc_end": 0.7,
+    "stage_days": {"initial": 30, "development": 60, "mid": 90, "late": 60},
+    "total_growing_days": 240, "root_depth_m": 0.3, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.0, "optimal_temp_range": [22, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 850
+  },
+  {
+    "id": "basil", "name_en": "Basil", "name_fr": "Basilic", "category": "Spices", "icon": "🌿",
+    "kc_ini": 0.6, "kc_mid": 1.05, "kc_end": 0.9,
+    "stage_days": {"initial": 10, "development": 15, "mid": 30, "late": 10},
+    "total_growing_days": 65, "root_depth_m": 0.3, "depletion_fraction": 0.4,
+    "yield_response_ky": 1.0, "optimal_temp_range": [18, 30], "frost_tolerance": false,
+    "drought_tolerance": "low", "water_total_mm": 250
+  },
+  {
+    "id": "cannabis_hemp", "name_en": "Hemp / Cannabis", "name_fr": "Chanvre / Cannabis", "category": "Industrial", "icon": "🌿",
+    "kc_ini": 0.35, "kc_mid": 1.1, "kc_end": 0.5,
+    "stage_days": {"initial": 15, "development": 25, "mid": 50, "late": 25},
+    "total_growing_days": 115, "root_depth_m": 1.2, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.8, "optimal_temp_range": [15, 28], "frost_tolerance": false,
+    "drought_tolerance": "medium", "water_total_mm": 400
+  },
+  {
+    "id": "lavender", "name_en": "Lavender", "name_fr": "Lavande", "category": "Spices", "icon": "💜",
+    "kc_ini": 0.35, "kc_mid": 0.65, "kc_end": 0.5,
+    "stage_days": {"initial": 30, "development": 40, "mid": 80, "late": 30},
+    "total_growing_days": 180, "root_depth_m": 0.6, "depletion_fraction": 0.6,
+    "yield_response_ky": 0.6, "optimal_temp_range": [12, 30], "frost_tolerance": true,
+    "drought_tolerance": "very_high", "water_total_mm": 200
+  },
+  {
+    "id": "rose", "name_en": "Rose (Damask)", "name_fr": "Rose (de Damas)", "category": "Spices", "icon": "🌹",
+    "kc_ini": 0.4, "kc_mid": 0.8, "kc_end": 0.55,
+    "stage_days": {"initial": 30, "development": 40, "mid": 80, "late": 30},
+    "total_growing_days": 180, "root_depth_m": 0.8, "depletion_fraction": 0.5,
+    "yield_response_ky": 0.7, "optimal_temp_range": [12, 28], "frost_tolerance": true,
+    "drought_tolerance": "high", "water_total_mm": 350
+  }
+]

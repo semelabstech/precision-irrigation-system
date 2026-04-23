@@ -14,9 +14,12 @@ PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
 SYNTHETIC_DIR = os.path.join(DATA_DIR, "synthetic")
 CHECKPOINT_DIR = os.path.join(BASE_DIR, "models", "checkpoints")
 
-# Créer les répertoires s'ils n'existent pas
+# Créer les répertoires s'ils n'existent pas (Silently fail on Vercel Read-Only FS)
 for d in [SATELLITE_DIR, WEATHER_DIR, IOT_DIR, PROCESSED_DIR, SYNTHETIC_DIR, CHECKPOINT_DIR]:
-    os.makedirs(d, exist_ok=True)
+    try:
+        os.makedirs(d, exist_ok=True)
+    except OSError:
+        pass
 
 # ─── API Endpoints ──────────────────────────────────────────
 COPERNICUS_API_URL = "https://catalogue.dataspace.copernicus.eu/odata/v1"

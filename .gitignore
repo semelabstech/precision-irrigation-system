@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+.env
+data/
+*.pyc
+.venv/
+venv/
+dist/
+.vercel/
+models/checkpoints/

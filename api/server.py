@@ -153,7 +153,7 @@ def region_seed(region_key):
 
 # ── Per-region data generators ─────────────────────────
 
-def generate_region_weather(region_key, days=365):
+def generate_region_weather(region_key, days=45):
     """Generate weather data tailored to the region's climate."""
     profile = get_climate_profile(region_key)
     rng = np.random.RandomState(region_seed(region_key))

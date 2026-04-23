@@ -199,19 +199,16 @@ def detect_anomalies(df: pd.DataFrame) -> pd.DataFrame:
     Utilise le modèle Autoencoder entraîné pour détecter les anomalies
     dans les lectures IoT (capteur défectueux, sécheresse inexpliquée).
     """
-    import torch
-    from models.iot.model import IoTAnomalyDetector
-    
     global _iot_model, _iot_checkpoint
     
-    model_path = os.path.join(IOT_DIR, "models", "iot_autoencoder.pth")
-    if not os.path.exists(model_path):
-        # Si le modèle n'est pas entraîné, on retourne sans anomalies.
-        df["anomaly_score"] = 0.0
-        df["is_anomaly"] = False
-        return df
-        
     try:
+        import torch
+        from models.iot.model import IoTAnomalyDetector
+
+        model_path = os.path.join(IOT_DIR, "models", "iot_autoencoder.pth")
+        if not os.path.exists(model_path):
+            raise FileNotFoundError("Model not trained")
+            
         if _iot_model is None:
             _iot_checkpoint = torch.load(model_path, map_location="cpu", weights_only=False)
             _iot_model = IoTAnomalyDetector(input_dim=4)

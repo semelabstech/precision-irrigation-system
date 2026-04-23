@@ -265,7 +265,7 @@ IOT_CONFIG = {
 
 # ─── Dashboard ──────────────────────────────────────────────
 DASHBOARD_CONFIG = {
-    "page_title": "🌾 Irrigation Précision - Maroc",
+    "page_title": "🌾 WaterWiseFarm - Maroc",
     "page_icon": "🌾",
     "layout": "wide",
     "theme": "dark",

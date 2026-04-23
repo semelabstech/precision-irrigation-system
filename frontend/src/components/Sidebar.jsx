@@ -13,7 +13,7 @@ export default function Sidebar({ currentPage, onPageChange, regionInfo, appMode
   return (
     <aside className="sidebar">
       <div className="sidebar-logo">
-        <h1>🌾 Irrigation Précision</h1>
+        <h1>🌾 WaterWiseFarm</h1>
         <div className="subtitle">Système Intelligent — Maroc</div>
       </div>
 
@@ -52,7 +52,7 @@ export default function Sidebar({ currentPage, onPageChange, regionInfo, appMode
       </div>
 
       <div className="sidebar-footer">
-        <span>Irrigation Précision v2.0<br />Maroc 2026</span>
+        <span>WaterWiseFarm v2.0<br />Maroc 2026</span>
       </div>
     </aside>
   )

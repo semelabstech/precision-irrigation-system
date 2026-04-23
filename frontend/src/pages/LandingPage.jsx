@@ -128,7 +128,7 @@ export default function LandingPage({ onSelectEngineerMode, onSelectFarmerMode }
 
   return (
     <div style={wrapperStyle}>
-      <h1 style={titleStyle}>Plateforme IA d'Irrigation Modérée</h1>
+      <h1 style={titleStyle}>WaterWiseFarm</h1>
       <p style={{ color: "#94a3b8", fontSize: "1.2rem", maxWidth: "600px", textAlign: "center", marginBottom: "3rem" }}>
         Optimisez vos ressources hydriques avec l'IA agricole de pointe.
       </p>
@@ -225,7 +225,7 @@ export default function LandingPage({ onSelectEngineerMode, onSelectFarmerMode }
       </div>
 
       <footer style={{ marginTop: "4rem", color: "#475569", fontSize: "0.9rem" }}>
-        ZEG Agriculture Intelligence © 2026 — Système de Précision Hydrique
+        WaterWiseFarm © 2026 — Système de Précision Hydrique
       </footer>
     </div>
   );
